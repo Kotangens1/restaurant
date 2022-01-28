@@ -18,19 +18,21 @@
 </head>
 <body>
     <header>
-        <content class="header-content">
-            <div class="header-logo">Fonditas</div>
+        <div class="header-content">
             <nav>
+                <div class="header-logo">Fonditas</div>
                 <ul class="nav-container">
                     <li>Nosotros</li>
                     <li>Fonditas</li>
                     <li>Mapa</li>
                     <li>Inscribírse</li>
                 </ul>
-
+                <div class="nav-button-container">
+                    <button class="nav_log-in" onclick="window.location.href = 'https://ru-ru.facebook.com/';">Inicia sesión</button>
+                    <button class="nav_basket"></button> 
+                </div>
             </nav>
-            <!-- <button class="nav_log-in">Inicia sesión</button>
-            <button class="nav_basket"></button> -->
+            <!-- -->
             <text class="header-italics">
                 De tu fonda favorita
             </text>  
@@ -47,10 +49,13 @@
                 <img class="header-picture-4 header-picture" src="img/pin.png" alt="">
                 <img class="header-picture-5 header-picture" src="img/img1.svg" alt="">
             </picture>
-        </content>
-        <decoration-background>
-            <img src="img/background-header.svg" alt="">
-        </decoration-background>
+            <ul class="header-social_network-container">
+                <button class="header-facebook header-social_network" onclick="window.location.href = 'https://ru-ru.facebook.com/';"></button>
+                <button class="header-twitter header-social_network" onclick="window.location.href = 'https://twitter.com/?lang=ru';"></button>
+                <button class="header-instagram header-social_network" onclick="window.location.href = 'https://www.instagram.com/';"></button>
+            </ul>
+        </div>
+
     </header>
 </body>
 </html>
