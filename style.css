@@ -1,0 +1,264 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  height: 880px;
+  display: flex;
+  justify-content: center;
+  background-color: #5eae53;
+  background-size: cover;
+  background-image: url(img/background-header.svg);
+}
+
+button {
+  font-family: DM Sans, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  padding: 13px 31px 14px 30px;
+  color: #ffffff;
+  border: 0;
+  background: #eb8e78;
+  border-radius: 12px;
+  height: 48px;
+}
+
+.header__content {
+  width: 1170px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 64px;
+}
+
+.navigation__logo {
+  font-family: Work Sans, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 48px;
+  color: #ffffff;
+}
+
+.navigation__list {
+  width: 426px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  list-style: none;
+  font-family: DM Sans, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: #ffffff;
+  padding: 0;
+}
+
+.navigation__item:hover {
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.83);
+}
+
+.navigation__button-group {
+  display: flex;
+  justify-content: space-between;
+  width: 234px;
+}
+
+.navigation__profile {
+  width: 170px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 12px;
+  background: #5eae53;
+}
+
+.navigation__basket {
+  border-radius: 0;
+  height: 48px;
+  width: 48px;
+  padding: 0;
+  letter-spacing: 0;
+  background-image: url(img/basket.png);
+}
+
+/*------------------------ START-HOME ------------------------*/
+
+.home {
+  display: flex;
+}
+
+.home__title_italics {
+  font-family: Caveat, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 63px;
+  color: #f6b76c;
+}
+
+.home__slogan {
+  width: 541px;
+  height: 240px;
+  font-family: Work Sans, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 80px;
+  color: #ffffff;
+}
+
+.home__search {
+  width: 470px;
+  height: 48px;
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-input {
+  width: 470px;
+  height: 48px;
+  background: #ffffff;
+  border-radius: 12px;
+  font-family: DM Sans, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: #33333380;
+  padding-left: 16px;
+  padding-top: 0;
+  border: 0;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+/*------------------------ END-HOME ------------------------*/
+
+.header-social_network-container {
+  position: absolute;
+  left: 0;
+  bottom: 48px;
+  width: 160px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-social_network {
+  background: none;
+  top: 16px;
+  border-radius: 0;
+  height: 48px;
+  width: 48px;
+  padding: 0;
+  letter-spacing: 0;
+}
+
+button:hover {
+  filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.34));
+}
+
+.header-facebook {
+  background-image: url(img/facebook.png);
+}
+
+.header-twitter {
+  background-image: url(img/twitter.png);
+}
+
+.header-instagram {
+  background-image: url(img/instagram.png);
+}
+
+.home__pictures-group {
+  width: 602px;
+  height: 608px;
+  position: relative;
+  top: 94px;
+  left: 26px;
+}
+
+.header-picture {
+  position: absolute;
+}
+
+.header-picture-1 {
+  z-index: 3;
+  top: 0;
+  right: 0;
+  filter: drop-shadow(10px 20px 40px rgba(7, 57, 0, 0.197973));
+}
+
+.header-picture-2 {
+  z-index: 2;
+  top: 64px;
+  right: 100px;
+  filter: drop-shadow(10px 20px 40px rgba(7, 57, 0, 0.197973));
+}
+
+.header-picture-3 {
+  bottom: 0;
+  left: 0;
+  filter: drop-shadow(10px 20px 40px rgba(7, 57, 0, 0.197973));
+}
+
+.header-picture-4 {
+  z-index: 3;
+  bottom: 52px;
+  right: 39px;
+}
+
+.header-picture-5 {
+  z-index: 4;
+  bottom: 182px;
+  right: 52px;
+}
+
+/*------------------------ START-POPULAR ------------------------*/
+
+.popular {
+  width: 100%;
+  height: 880px;
+  background-color: #ffffff;
+  background-size: cover;
+}
+
+/*------------------------ END-POPULAR ------------------------*/
+
+/*------------------------ START-ADAPTIVE ------------------------*/
+
+@media (max-width: 1260px) {
+  header {
+    height: 1720px;
+  }
+
+  .home {
+    flex-direction: column;
+    align-items: center;
+  }
+}

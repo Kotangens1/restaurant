@@ -4,9 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Work+Sans:wght@700&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat&family=DM+Sans&family=Work+Sans:wght@700&display=swap');
+    </style>
     <title>Document</title>
 </head>
 <body>
-    <h1>Ресторан</h1>
+    <header>
+        <div class="header__content">
+            <nav class="navigation">
+                <div class="navigation__logo">Fonditas</div>
+                <ul class="navigation__list">
+                    <li class="navigation__item">Nosotros</li>
+                    <li class="navigation__item">Fonditas</li>
+                    <li class="navigation__item">Mapa</li>
+                    <li class="navigation__item">Inscribírse</li>
+                </ul>
+                <div class="navigation__button-group">
+                    <button class="navigation__profile" onclick="window.location.href = 'https://ru-ru.facebook.com/';">Inicia sesión</button>
+                    <button class="navigation__basket"></button>
+                </div>
+            </nav>
+            <div class="home">
+                <div class="home__main">
+                    <h2 class="home__title_italics">
+                        De tu fonda favorita
+                    </h2>
+                    <h1 class="home__slogan">La comida que ya conoces <br>al mejor precio</h1>
+                    <label class="home__search">
+                        <input class="search-input" placeholder="Busca tu platillo favorito">
+                        <button class="search-button">Buscar</button>
+                    </label>
+                </div>
+                <div class="home__pictures-group">
+                    <img class="header-picture-1 header-picture" src="img/food1.png" alt="">
+                    <img class="header-picture-2 header-picture" src="img/food2.png" alt="">
+                    <img class="header-picture-3 header-picture" src="img/food3.png" alt="">
+                    <img class="header-picture-4 header-picture" src="img/pin.png" alt="">
+                    <img class="header-picture-5 header-picture" src="img/img1.svg" alt="">
+                </div>
+            </div>
+            <ul class="home__social_networks">
+                <button class="header-facebook header-social_network" onclick="window.location.href = 'https://ru-ru.facebook.com/';"></button>
+                <button class="header-twitter header-social_network" onclick="window.location.href = 'https://twitter.com/?lang=ru';"></button>
+                <button class="header-instagram header-social_network" onclick="window.location.href = 'https://www.instagram.com/';"></button>
+            </ul>
+        </div>
+
+    </header>
+    <section class="popular">
+
+    </section>
 </body>
 </html>
